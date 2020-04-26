@@ -15,22 +15,22 @@ var divInfo = [
 
 var pT = [
 	{
-		section: '0',
+		section: 0,
 		image: 'gotboredWhite.png',
 		alt: 'Got Bored?'
 	},
 	{
-		section: '1',
+		section: 1,
 		image: 'calogo.png',
 		alt: 'Cancer Alliance'
 	},	
 	{
-		section: '2',
+		section: 2,
 		image: 'trailblazer.png" id="trail',
 		alt: 'Trailblazer'
 	},
 	{
-		section: '3',
+		section: 3,
 		image: 'radio2.jpg',
 		alt: 'NPR Scrape'
 	},
@@ -65,7 +65,7 @@ function loadProjectInfo(){
 		for (let i = 0; i < pT.length; i++){
 			console.log(pT[i].section)
 			pTArr.push('<div class="col-sm-6 col-md-4">' + 
-				'<div class="thumbnail projButton" data-toggle="modal" data-target="#projectModal" data-section='+ 
+				'<div class="thumbnail" data-toggle="modal" data-target="#projectModal" data-section='+ 
 				 + pT[i].section + '><img class="img-rounded img-fluid" src="./assets/css/images/'
 				+ pT[i].image + '" alt="' 
 				+ pT[i].alt + '"/></div></div>')
