@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Soria-Savva</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css2?family=Abel&family=Dosis:wght@500&family=Montserrat&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	</head>
+	<body>
+		<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color:rgba(135, 129, 110, .7)">
+			  <a class="navbar-brand active homeSec">Home<span class="sr-only">(current)</span></a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNav">
+			    <ul class="navbar-nav">
+			      <li class="nav-item">
+			        <a class="nav-link aboutSec" data-section=0>About</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link projSec" >Projects</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link conSec" data-section=1>Contact</a>
+			      </li>
+		    </ul>
+		  </div>
+		</nav>
+		<div class="container-fluid">
+			<div class="row justify-content-md-center">
+				<div class="col">
+					<div id="home">
+						<h1>Hello HIRE ME PLEASE</h1>
+						<h6 class="aboutSec" data-section=0>About</h6><!--animate this-->
+					</div>
+					<div class="col-sm" id="mainDiv"></div>
+				</div>
+		</div>
+		<footer>
+			<div class='contactIcons text-center'>
+				<div>
+					<span class=''>
+						<a href="https://github.com/cpsavva" id="github" target='_blank'><img class="icons" src="./assets/css/images/gitblack.png"></a>
+						<a href="https://linkedin.com/in/csoriasavva" id='linkedin' target='_blank'><img class="icons" src="./assets/css/images/linkedinblack.png"></a>
+						<a href="https://twitter.com/soriasavva" id='twitter' target='_blank'><img class="icons" src="./assets/css/images/twitterblack.png"></a>
+						<a href="mailto:csoriasavva@gmail.com"><img class='icons' src="./assets/css/images/emailblack.png"></a>
+					</span>
+				</div>
+			</div>
+		</footer>
+	<!-- Modal -->
+	<div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	    	<div class="modal-body projectCaption">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	      		<div class="row modalInfo">
+	      		
+	      		</div>
+	      	</div>
+	    </div>
+	  </div>
+	</div>
+	<!-- End Modal -->
+	<!-- Scripts -->
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="portfolio.js"></script>
+		<script type="text/javascript" src="modalInfo.js"></script>
+	</body>
+</html>

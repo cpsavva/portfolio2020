@@ -1,0 +1,36 @@
+/*
+Color Pallette
+Dark Khaki: #A47C4A rgba(164, 124, 74, 1)
+Rosy Brown : #C2BB9D rgba(194, 187, 157, 1)
+Dark Olive Green: #3F322A rgba(63, 50, 42, 1)
+Gray: #87816E rgba(135, 129, 110, 1)
+Dark Sea Green: #989E8C rgba(152, 158, 140, 1)
+
+Fonts
+font-family: 'Abel', sans-serif;
+font-family: 'Dosis', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+body {
+	background-color: #3F322A;
+	/*background-image: url('./images/sprinkles.png');*/
+	color: #A47C4A;
+	padding-top: 60px;
+	font-family: 'Dosis', sans-serif;
+}
+.ptags {
+	font-family: 'Montserrat', sans-serif;
+	color: #C2BB9D;
+}
+.thumbnail{
+	height: 200px;
+	width: 200px;
+	background-color: #989E8C;
+}
+#trail{
+	height: 100px;
+	width: 250px;
+	margin-top: 75px;
+	margin-bottom: 75px;
+}
