@@ -47,6 +47,7 @@
 
 function loadModalInfo(){
 		$('.projButton').click(function(){
+			console.log('.projButton has been clicked')
 			var projName = $(this).data('section');
 			var info = modalInfo[projName]
 			console.log("projName is: " + projName)

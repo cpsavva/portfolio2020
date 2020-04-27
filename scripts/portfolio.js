@@ -63,17 +63,20 @@ function loadProjectInfo(){
 		$('#home').hide();
 		console.log('I have been clicked')
 		for (let i = 0; i < pT.length; i++){
-			console.log(pT[i].section)
+			console.log(pT[0].section)
 			pTArr.push('<div class="col-sm-6 col-md-4">' + 
-				'<div class="thumbnail" data-toggle="modal" data-target="#projectModal" data-section='+ 
-				 + pT[i].section + '><img class="img-rounded img-fluid" src="./assets/css/images/'
+				'<div class="thumbnail"><img class="img-rounded img-fluid" src="./assets/css/images/'
 				+ pT[i].image + '" alt="' 
 				+ pT[i].alt + '"/></div></div>')
 			var cleanPT = pTArr.join('')
 		}
 
-		$('#mainDiv').html('<div class="row">'+ cleanPT + '</div>');
-		// $('#mainDiv').html('<img src="./assets/css/images/calogo.png" alt="C A" >');
+		// $('#mainDiv').html('<div class="row">'+ cleanPT + '</div>');
+		$('#mainDiv').html('<div class="col-sm-6 col-md-4">' + 
+				'<div class="thumbnail ><button class="projButton" data-toggle="modal" data-target="#projectModal" data-section="'
+				+ pT[0].section +'">'+ pT[0].alt+ '</button><img class="img-rounded img-fluid" src="./assets/css/images/'
+				+ pT[0].image + '" alt="' 
+				+ pT[0].alt + '"/></div></div>');
 
 	});
 }
