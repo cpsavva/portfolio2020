@@ -41,6 +41,7 @@ function projectsPage(){
 		$('.projects').fadeIn('slow');
 	})
 }
+// SOMETHING IS UP WITH THIS FUNCTION!!!!!!!!
 function aboutPage(){
 	$('#about').click(function(){
 		$('.contact').css('display', 'none');
