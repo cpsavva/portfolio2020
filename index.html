@@ -5,10 +5,11 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css2?family=Abel&family=Dosis:wght@500&family=Montserrat&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
 	</head>
 	<body>
 		<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color:rgba(135, 129, 110, .7)">
-			  <a class="navbar-brand active homeSec">Home<span class="sr-only">(current)</span></a>
+			  <a class="navbar-brand active homeSec" id="home">Home<span class="sr-only">(current)</span></a>
 			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			    <span class="navbar-toggler-icon"></span>
 			  </button>
@@ -18,39 +19,57 @@
 			        <a class="nav-link aboutSec" data-section=0>About</a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link projSec" >Projects</a>
+			        <a class="nav-link projSec" id="projects" >Projects</a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link conSec" data-section=1>Contact</a>
+			        <a class="nav-link conSec" id="contact" data-section=1>Contact</a>
 			      </li>
 		    </ul>
 		  </div>
 		</nav>
-		<div class="container-fluid">
+		
+		<div class="container-fluid homePage">
 			<div class="row justify-content-md-center">
 				<div class="col">
-					<div id="home">
+					<div>
 						<h1>Hello HIRE ME PLEASE</h1>
-						<h6 class="aboutSec" data-section=0>About</h6><!--animate this-->
+						<button class="aboutSec">About</button><!--animate this-->
 					</div>
-						<div class="container">
-		<div class="row">
-			<div class="col-4 thumbnail">
-				<button class="projButton" data-toggle="modal" data-target="#projectModal" data-section=0>Project One</button>
-			</div>
-			<div class="col-4 thumbnail">
-				<button class="projButton" data-toggle="modal" data-target="#projectModal" data-section=1>Project Two</button>
-			</div>
-			<div class="col-4 thumbnail">
-				<button class="projButton" data-toggle="modal" data-target="#projectModal" data-section=2>Project Three</button>
-			</div>
-			<div class="col-4 thumbnail">
-				<button class="projButton" data-toggle="modal" data-target="#projectModal" data-section=3>Project Four</button>
+				</div>
 			</div>
 		</div>
-	</div>
-					<div class="col-sm" id="mainDiv"></div>
+		<!-- End of Home -->
+		<!-- About Div -->
+		<div class="container-fluid about" style="display: none;">
+			<div class="row justify-content-md-center">
+				<p>I am the About Div</p>
+				<button class="projSec">Projects</button>
+			</div>
+		</div>
+		<!-- End of About Div -->
+		<!-- Projects Div -->
+		<div class="container-fluid projects" style="display: none;>
+			<div class="row justify-content-md-center">
+				<div class="col-4 thumbnail">
+					<button class="projButton" data-toggle="modal" data-target="#projectModal" data-section=0>Project One</button>
 				</div>
+				<div class="col-4 thumbnail">
+					<button class="projButton" data-toggle="modal" data-target="#projectModal" data-section=1>Project Two</button>
+				</div>
+				<div class="col-4 thumbnail">
+					<button class="projButton" data-toggle="modal" data-target="#projectModal" data-section=2>Project Three</button>
+				</div>
+				<div class="col-4 thumbnail">
+					<button class="projButton" data-toggle="modal" data-target="#projectModal" data-section=3>Project Four</button>
+				</div>
+			</div>
+		</div>
+		<!-- End of Projects Div -->
+		<!-- Contacts Div -->
+		<div class="container-fluid contact" style="display: none;">
+			<div class="row justify-content-md-center">
+				<p>I am the contact div</p>
+			</div>
 		</div>
 		<footer>
 			<div class='contactIcons text-center'>
@@ -77,10 +96,12 @@
 	</div>
 	<!-- End Modal -->
 	<!-- Scripts -->
-		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-		<script type="text/javascript" src="./scripts/portfolio.js"></script>
+		<!-- <script type="text/javascript" src="./scripts/portfolio.js"></script> -->
+		<script type="text/javascript" src="script.js"></script>
 		<script type="text/javascript" src="./scripts/modalInfo.js"></script>
 	</body>
 </html>

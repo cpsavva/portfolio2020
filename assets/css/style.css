@@ -23,4 +23,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	color: #C2BB9D;
 }
+.about .projects .contact{
+	display: none;
+}
 
