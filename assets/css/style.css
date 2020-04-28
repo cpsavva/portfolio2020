@@ -27,3 +27,36 @@ body {
 	display: none;
 }
 
+
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.neons {
+   margin-top: 6rem;
+   text-align: center;
+}
+
+.neons h4 {
+  font-size: 5rem;
+  text-align: center;
+   font-weight: bold;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+     from {
+      color: #A47C4A;
+    text-shadow: 0 0 10px #d5bea2, 0 0 20px #d5bea2, 0 0 30px #d5bea2, 0 0 40px #d5bea2, 0 0 50px #d5bea2, 0 0 60px #d5bea2, 0 0 70px #d5bea2, 0 0 90px #d5bea2;
+  }
+  
+  to {
+     color: #87816E;
+    text-shadow: 0 0 20px #d5bea2, 0 0 30px #d5bea2, 0 0 40px #d5bea2, 0 0 50px #d5bea2, 0 0 60px #d5bea2, 0 0 70px #d5bea2, 0 0 80px #d5bea2, 0 1 90px #d5bea2;
+  }
+}
+
