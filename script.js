@@ -34,24 +34,34 @@ function contactPage(){
 	})
 }
 function projectsPage(){
-	$('#contact').click(function(){
-		$('.projects').css('display', 'none');
+	$('#projects').click(function(){
+		$('.contact').css('display', 'none');
 		$('.about').css('display', 'none');
 		$('.homePage').css('display', 'none');
-		$('.contact').fadeIn('slow');
+		$('.projects').fadeIn('slow');
 	})
 }
+function aboutPage(){
+	$('#about').click(function(){
+		$('.contact').css('display', 'none');
+		$('.projects').css('display', 'none');
+		$('.homePage').css('display', 'none');
+		$('.about').fadeIn('slow');
+	})
+}
+
 
 // Executions
 $(document).ready(function(event){
 	$('.aboutSec').click(function(){
 		firstFade();
 	})
-	resetHome();
-	contactPage();
 	$('.projSec').click(function(){
 		projectFade();
 	})
-	
+	resetHome();
+	contactPage();
+	aboutPage();
+	projectsPage();
 
 })
