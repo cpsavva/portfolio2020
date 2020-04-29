@@ -18,6 +18,9 @@ body {
 	color: #A47C4A;
 	padding-top: 60px;
 	font-family: 'Dosis', sans-serif;
+	display: flex;
+   	justify-content: center;
+   	align-items: center;
 }
 .ptags {
 	font-family: 'Montserrat', sans-serif;
@@ -27,13 +30,16 @@ body {
 	display: none;
 }
 
-
-body {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+.footer {
+	position: absolute;
+	bottom: 0;
 }
 
+
+
+
+
+/*Animations*/
 .neons {
    margin-top: 6rem;
    text-align: center;
@@ -51,12 +57,14 @@ body {
 @-webkit-keyframes glow {
      from {
       color: #A47C4A;
-    text-shadow: 0 0 10px #d5bea2, 0 0 20px #d5bea2, 0 0 30px #d5bea2, 0 0 40px #d5bea2, 0 0 50px #d5bea2, 0 0 60px #d5bea2, 0 0 70px #d5bea2, 0 0 90px #d5bea2;
+      text-shadow: 0 0 10px #d5bea2, 0 0 20px #d5bea2, 0 0 30px #d5bea2, 0 0 40px #d5bea2;
+    /*text-shadow: 0 0 10px #d5bea2, 0 0 20px #d5bea2, 0 0 30px #d5bea2, 0 0 40px #d5bea2, 0 0 50px #d5bea2, 0 0 60px #d5bea2, 0 0 70px #d5bea2, 0 0 90px #d5bea2;*/
   }
   
   to {
      color: #87816E;
+     /*text-shadow: 0 0 20px #d5bea2, 0 0 30px #d5bea2, 0 0 40px #d5bea2, 0 0 50px #d5bea2;*/
     text-shadow: 0 0 20px #d5bea2, 0 0 30px #d5bea2, 0 0 40px #d5bea2, 0 0 50px #d5bea2, 0 0 60px #d5bea2, 0 0 70px #d5bea2, 0 0 80px #d5bea2, 0 1 90px #d5bea2;
   }
 }
-
+/*End of Animations*/
