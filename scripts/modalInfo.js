@@ -56,7 +56,7 @@ function loadModalInfo(){
 					'<h2 class="modal-title modalHeading">' + info.projectName + 
 					'</h2><div class="row"><div class="col-sm-4 text-center"><img class="img-rounded" src="./assets/css/images/' 
 				    + info.image +  '" alt="' + info.alt + 
-				    '"><br /><br /><p><a href="' + info.site +
+				    '"><br /><br /><p><a id="siteLink" href="' + info.site +
 				    '" target="_blank">Website</a></p></div><div class="col-sm-8"><p>' 
 				    + info.des +  '</p><h3 class="modalHeading">Technologies</h3><p>' 
 				    + info.tech +  '</p><h3 class="modalHeading">Collaborators</h3><p>' 
