@@ -96,3 +96,10 @@ body {
   color:white ;
 }
 
+.icons {
+  height: 35px;
+  width: 35px;
+}
+.empty{
+  height: 75px
+}
