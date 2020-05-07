@@ -13,24 +13,96 @@ font-family: 'Montserrat', sans-serif;
 */
 
 body {
-	background-color: #3F322A;
-	/*background-image: url('./images/sprinkles.png');*/
+	
+  /*<a href="https://www.freepik.com/free-photos-vectors/background">Background photo created by kjpargeter - www.freepik.com</a>*/
+	/*background-image: url('./images/3768.jpg');*/
+  background-color: #3F322A;
+/*background-image: url(http://www.transparenttextures.com/patterns/asfalt-light.png);*/
 	color: #A47C4A;
 	padding-top: 60px;
 	font-family: 'Dosis', sans-serif;
+	display: flex;
+   	justify-content: center;
+   	align-items: center;
 }
 .ptags {
 	font-family: 'Montserrat', sans-serif;
 	color: #C2BB9D;
 }
-.thumbnail{
-	height: 200px;
-	width: 200px;
-	background-color: #989E8C;
+.about .projects .contact{
+	display: none;
 }
-#trail{
-	height: 100px;
-	width: 250px;
-	margin-top: 75px;
-	margin-bottom: 75px;
+
+.footer {
+	position: absolute;
+	bottom: 0;
+}
+
+
+
+
+
+/*Animations*/
+.neons {
+   margin-top: 6rem;
+   text-align: center;
+}
+
+.neons h4 {
+  font-size: 5rem;
+  text-align: center;
+   font-weight: bold;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+     from {
+      color: #A47C4A;
+      text-shadow: 0 0 10px #d5bea2, 0 0 20px #d5bea2, 0 0 30px #d5bea2, 0 0 40px #d5bea2;
+    /*text-shadow: 0 0 10px #d5bea2, 0 0 20px #d5bea2, 0 0 30px #d5bea2, 0 0 40px #d5bea2, 0 0 50px #d5bea2, 0 0 60px #d5bea2, 0 0 70px #d5bea2, 0 0 90px #d5bea2;*/
+  }
+  
+  to {
+     color: #87816E;
+     /*text-shadow: 0 0 20px #d5bea2, 0 0 30px #d5bea2, 0 0 40px #d5bea2, 0 0 50px #d5bea2;*/
+    text-shadow: 0 0 20px #d5bea2, 0 0 30px #d5bea2, 0 0 40px #d5bea2, 0 0 50px #d5bea2, 0 0 60px #d5bea2, 0 0 70px #d5bea2, 0 0 80px #d5bea2, 0 1 90px #d5bea2;
+  }
+}
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+/*End of Animations*/
+
+.modal-content {
+  background-color: #87816E ;
+  color: #3F322A ;
+}
+#siteLink {
+  color:white ;
+}
+
+.icons {
+  height: 35px;
+  width: 35px;
+}
+.empty{
+  height: 75px
+}
+.lang {
+  color: #87816E;
 }

@@ -7,22 +7,64 @@
 		<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 	</head>
 <body>
-	<div class="container">
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color:rgba(135, 129, 110, .7)">
+	<a class="navbar-brand homeSec" id="home">Home</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+				<a class="nav-link" id="about" data-section=0>About</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" id="projects" data-section=1>Projects</a>
+			</li>
+			<li>
+				<a class="nav-link" id="contact" data-section=2>Contact</a>
+			</li>
+			</ul>
+			<ul class="navbar-nav ml-auto">
+			<span>
+				<a href="https://github.com/cpsavva" id="github" target='_blank'><img class="icons" src="./assets/css/images/gitblack.png"></a>
+				<a href="https://linkedin.com/in/csoriasavva" id='linkedin' target='_blank'><img class="icons" src="./assets/css/images/linkedinblack.png"></a>
+				<a href="mailto:csoriasavva@gmail.com"><img class='icons' src="./assets/css/images/emailblack.png"></a>
+			</span>
+			
+		</ul>
+	</div>
+</nav>
+<!-- 	<div class="container">
 		<div class="row">
-			<div class="col-4 thumbnail">
-				<button class="projButton" data-toggle="modal" data-target="#projectModal" data-section=0>Project One</button>
-			</div>
-			<div class="col-4 thumbnail">
-				<button class="projButton" data-toggle="modal" data-target="#projectModal" data-section=1>Project Two</button>
-			</div>
-			<div class="col-4 thumbnail">
-				<button class="projButton" data-toggle="modal" data-target="#projectModal" data-section=2>Project Three</button>
-			</div>
-			<div class="col-4 thumbnail">
-				<button class="projButton" data-toggle="modal" data-target="#projectModal" data-section=3>Project Four</button>
+			<div class="col">
+		    <div class="thumbnail projButton" data-toggle="modal" data-target="#projectModal" data-section=1>
+		      <img class='img-fluid' src="./assets/css/images/gotboredWhite.png" alt="Got Bored?">
+		    </div>
+		  </div>
+			<div class="col">
+		    <div class="thumbnail projButton" data-toggle="modal" data-target="#projectModal" data-section=2>
+		      <img  class='img-fluid' src="./assets/css/images/trailblazer.png" alt="Trailblazer">
+		    </div>
+		  </div>
+			<div class="col">
+		    <div class="thumbnail projButton" data-toggle="modal" data-target="#projectModal" data-section=0>
+		     	<img class='img-fluid' src="./assets/css/images/calogo.png" alt="Cancer Alliance" >
+		   	</div>
+		   </div>
+			<div class="col">
+			    <div class="thumbnail projButton" data-toggle="modal" data-target="#projectModal" data-section=3>
+			      <img class='img-fluid' src="./assets/css/images/radio2.jpg" alt="NPR Scrape">
+			    </div>
 			</div>
 		</div>
-	</div>
+	</div> -->
+	<div class="container">
+   <div class="row">
+      <div class="neons col-12">
+         <h4><em>-feelin' blue-</em></h4>
+      </div>
+   </div>
+</div>
 	<!-- Modal -->
 	<div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	  <div class="modal-dialog" role="document">
