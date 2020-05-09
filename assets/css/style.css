@@ -17,7 +17,10 @@ body {
   /*<a href="https://www.freepik.com/free-photos-vectors/background">Background photo created by kjpargeter - www.freepik.com</a>*/
 	/*background-image: url('./images/3768.jpg');*/
   background-color: #3F322A;
-/*background-image: url(http://www.transparenttextures.com/patterns/asfalt-light.png);*/
+  background-image: url('./images/low-contrast-linen.png');
+  /*background-image: url('./images/asfalt-light.png');*/
+  background-repeat: repeat;
+
 	color: #A47C4A;
 	padding-top: 60px;
 	font-family: 'Dosis', sans-serif;
@@ -90,6 +93,7 @@ body {
 
 .modal-content {
   background-color: #87816E ;
+  background-image: url('./images/asfalt-light.png');
   color: #3F322A ;
 }
 #siteLink {
