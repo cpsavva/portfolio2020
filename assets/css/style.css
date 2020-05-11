@@ -13,20 +13,16 @@ font-family: 'Montserrat', sans-serif;
 */
 
 body {
-	
-  /*<a href="https://www.freepik.com/free-photos-vectors/background">Background photo created by kjpargeter - www.freepik.com</a>*/
-	/*background-image: url('./images/3768.jpg');*/
   background-color: #3F322A;
   background-image: url('./images/low-contrast-linen.png');
-  /*background-image: url('./images/asfalt-light.png');*/
   background-repeat: repeat;
 
 	color: #A47C4A;
 	padding-top: 60px;
 	font-family: 'Dosis', sans-serif;
 	display: flex;
-   	justify-content: center;
-   	align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 .ptags {
 	font-family: 'Montserrat', sans-serif;
@@ -47,14 +43,38 @@ body {
   margin: 3px;
   background-color: #87816E;
 }
+
 .projButton {
   background-color: #87816E; 
   border: none;
 }
 
+#trailImg {
+  margin-top: 65px;
+  background-color: #87816E; 
+  border: none;
+}
 
 
+.modal-content {
+  background-color: #87816E ;
+  background-image: url('./images/asfalt-light.png');
+  color: #3F322A ;
+}
+#siteLink {
+  color:white ;
+}
 
+.icons {
+  height: 35px;
+  width: 35px;
+}
+.empty{
+  height: 75px
+}
+.lang {
+  color: #87816E;
+}
 
 /*Animations*/
 .neons {
@@ -102,24 +122,5 @@ body {
 }
 /*End of Animations*/
 
-.modal-content {
-  background-color: #87816E ;
-  background-image: url('./images/asfalt-light.png');
-  color: #3F322A ;
-}
-#siteLink {
-  color:white ;
-}
-
-.icons {
-  height: 35px;
-  width: 35px;
-}
-.empty{
-  height: 75px
-}
-.lang {
-  color: #87816E;
-}
 
 
