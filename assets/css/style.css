@@ -84,15 +84,15 @@ body {
   border: none;
 }
 .alert {
-  display: none;
+  visibility: hidden;
   color:#C2BB9D;
 }
+
 .projectText{
     margin-top: 3rem;
 }
-.projectText h4 {
-
-  font-size: 5rem;
+.projectText h5 {
+  /*font-size: 5rem;*/
   text-align: center;
   color: #C2BB9D;
 

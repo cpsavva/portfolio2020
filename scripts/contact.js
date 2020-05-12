@@ -30,18 +30,13 @@ function submitForm(){
     var email = $("#email").val();
     var message = $("#message").val();
 
-    
-
-
+    // 
     saveMessages(name, email, message);
-    // $('.projects').css('display', 'none');
-    //     $('.about').css('display', 'none');
-    //     $('.homePage').css('display', 'none');
-    //     $('.contact').fadeIn('fast');
-   // set confirmation alert and fadeout
-    $(".alert").show();
+    $('.alert').css("visibility", "visible");
+    
     setTimeout(function(){
-    	$(".alert").fadeOut("slow");
+    // 	$(".alert:visible").hide("slow");
+    $('.alert').css("visibility", "hidden");
     }, 3000);
 
     // reset form
@@ -51,9 +46,6 @@ function submitForm(){
   });
 
 };
-
-
-
 
 
 //Saving Messages
