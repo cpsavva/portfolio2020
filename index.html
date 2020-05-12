@@ -4,6 +4,7 @@
 		<title>Soria-Savva</title>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css2?family=Abel&family=Dosis:wght@500&family=Montserrat&display=swap" rel="stylesheet">
+		<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 		<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 	</head>
 	<body>
@@ -56,7 +57,7 @@
 			<div class="empty"></div>
 			<div class="row justify-content-md-center">
 				<div class="col text-center">
-					<h2>Some clever catch phrase</h3>
+					<h2 class="animate__animated animate__lightSpeedInRight">Some clever catch phrase</h3>
 				</div>
 			</div>
 			<div class="row justify-content-md-center">
@@ -70,10 +71,12 @@
 				</div>
 				<div class="col-1"></div>
 			</div>
-			<div class="row">
-				<div class="neons col-12">
-					<h4><em class="projSec">projects</em></h4>
+			<div class="row justify-content-md-center">
+				<div class="col-sm"></div>
+				<div class="col-sm projectText">
+					<h4 class="animate__animated animate__backInDown animate__delay-2s"><em class="projSec">projects</em></h4>
 				</div>
+				<div class="col-sm"></div>
 			</div>
 		</div>
 		<!-- End of About Div -->
@@ -124,26 +127,30 @@
 			<div class="row justify-content-md-center">
 				<div class="col-sm"></div>
 				<div class="col-sm">
+				<div class="alert" style="display: none">
+					<h3 style="color: #C2BB9D">Thank you! Your message has been submitted.</h3>
+				</div>
 				<form>
 					<div class="form-group">
-				    	<label for="nameEntry">Name</label>
-			    		<input type="text" class="form-control" id="nameEntry" placeholder="Name">
+				    	<label  for="name">Name</label>
+			    		<input id="name" type="text" class="form-control" required>
 			 		</div>
 					<div class="form-group">
-						<label for="emailAddress">Email address</label>
-						<input type="email" class="form-control" id="emailAddress" placeholder="name@example.com">
+						<label for="email">Email address</label>
+						<input id="email" type="email" class="form-control" required>
 					</div>
 					<div class="form-group">
-						<label for="messageArea">Example textarea</label>
-						<textarea class="form-control" id="messageArea" rows="3"></textarea>
+						<label for="message">Message</label>
+						<textarea id="message" class="form-control" rows="3"></textarea>
 					</div>
+					<button type="submit" class="btn btn-secondary">Submit</button>
 				</form>
 				</div>
 				<div class="col-sm"></div>
 			</div>
 		</div>
 		<!-- Modal -->
-		<div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal fade animate__animated animate__flipInX" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
 					<div class="modal-body projectCaption">

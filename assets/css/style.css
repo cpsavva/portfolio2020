@@ -83,9 +83,25 @@ body {
   background-color: #C2BB9D;
   border: none;
 }
+.alert {
+  display: none;
+  color:#C2BB9D;
+}
+.projectText{
+    margin-top: 3rem;
+}
+.projectText h4 {
+
+  font-size: 5rem;
+  text-align: center;
+  color: #C2BB9D;
+
+
+}
+
 /*Animations*/
 .neons {
-   margin-top: 6rem;
+   margin-top: 3rem;
    text-align: center;
 }
 
