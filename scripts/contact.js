@@ -37,9 +37,9 @@ function submitForm(){
 
    // set confirmation alert and fadeout
     $(".alert").show();
-    setTimeout(function(){
-    	$(".alert").hide();
-    },3000)
+    // setTimeout(function(){
+    // 	$(".alert").fadeOut("slow");
+    // }, 3000);
 
     // reset form
   	$('input').val("");

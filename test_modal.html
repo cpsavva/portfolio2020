@@ -75,21 +75,21 @@
 			<div class="row justify-content-md-center">
 				<div class="col-sm"></div>
 				<div class="col-sm">
-				<div class="alert" style="background-color: green; display: none">
-					<p style="color: white">Your message has been submitted.</p>
+				<div class="alert" style="display: none">
+					<h3 style="color: #C2BB9D">Thank you! Your message has been submitted.</h3>
 				</div>
 				<form>
 					<div class="form-group">
-				    	<label  for="nameEntry">Name</label>
-			    		<input id="name" type="text" class="form-control" id="nameEntry">
+				    	<label  for="name">Name</label>
+			    		<input id="name" type="text" class="form-control" required>
 			 		</div>
 					<div class="form-group">
-						<label for="emailAddress">Email address</label>
-						<input id="email" type="text" class="form-control" id="emailAddress">
+						<label for="email">Email address</label>
+						<input id="email" type="email" class="form-control" required>
 					</div>
 					<div class="form-group">
-						<label for="messageArea">Message</label>
-						<textarea id="message" class="form-control" id="messageArea" rows="3"></textarea>
+						<label for="message">Message</label>
+						<textarea id="message" class="form-control" rows="3"></textarea>
 					</div>
 					<button type="submit" class="btn btn-secondary">Submit</button>
 				</form>
