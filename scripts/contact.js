@@ -34,12 +34,15 @@ function submitForm(){
 
 
     saveMessages(name, email, message);
-
+    // $('.projects').css('display', 'none');
+    //     $('.about').css('display', 'none');
+    //     $('.homePage').css('display', 'none');
+    //     $('.contact').fadeIn('fast');
    // set confirmation alert and fadeout
     $(".alert").show();
-    // setTimeout(function(){
-    // 	$(".alert").fadeOut("slow");
-    // }, 3000);
+    setTimeout(function(){
+    	$(".alert").fadeOut("slow");
+    }, 3000);
 
     // reset form
   	$('input').val("");
