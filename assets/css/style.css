@@ -75,7 +75,14 @@ body {
 .lang {
   color: #87816E;
 }
+.form-control {
+  background-color: #C2BB9D;
 
+}
+.form-control:focus {
+  background-color: #C2BB9D;
+  border: none;
+}
 /*Animations*/
 .neons {
    margin-top: 6rem;
