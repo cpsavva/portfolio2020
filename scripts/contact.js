@@ -31,7 +31,7 @@ function submitForm(){
     var message = $("#message").val();
 
     // 
-    // saveMessages(name, email, message);
+    saveMessages(name, email, message);
     $('.alert').css("visibility", "visible");
     
     setTimeout(function(){
