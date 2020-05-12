@@ -58,7 +58,7 @@
 			</div>
 		</div>
 	</div> -->
-	<div class="container">
+<!-- 	<div class="container">
    <div class="row">
       <div class="neons col-12">
          <h4><em>-feelin' blue-</em></h4>
@@ -67,9 +67,38 @@
         </a>
       </div>
    </div>
-</div>
+</div> -->
+<div class="container-fluid contact" style="display: block;">
+			<div class="row">
+				<div class="empty"></div>
+			</div>
+			<div class="row justify-content-md-center">
+				<div class="col-sm"></div>
+				<div class="col-sm">
+				<div class="alert" style="background-color: green; display: none">
+					<p style="color: white">Your message has been submitted.</p>
+				</div>
+				<form>
+					<div class="form-group">
+				    	<label  for="nameEntry">Name</label>
+			    		<input id="name" type="text" class="form-control" id="nameEntry">
+			 		</div>
+					<div class="form-group">
+						<label for="emailAddress">Email address</label>
+						<input id="email" type="text" class="form-control" id="emailAddress">
+					</div>
+					<div class="form-group">
+						<label for="messageArea">Message</label>
+						<textarea id="message" class="form-control" id="messageArea" rows="3"></textarea>
+					</div>
+					<button type="submit" class="btn btn-secondary">Submit</button>
+				</form>
+				</div>
+				<div class="col-sm"></div>
+			</div>
+		</div>
 	<!-- Modal -->
-	<div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<!-- 	<div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	  <div class="modal-dialog" role="document">
 	    <div class="modal-content">
 	    	<div class="modal-body projectCaption">
@@ -80,9 +109,10 @@
 	      	</div>
 	    </div>
 	  </div>
-	</div><!-- /.modal -->
+	</div> -->
+	<!-- /.modal -->
 
-        <div id="costumModal7" class="modal" data-easein="whirlIn"  tabindex="-1" role="dialog" aria-labelledby="costumModalLabel" aria-hidden="true">
+     <!--    <div id="costumModal7" class="modal" data-easein="whirlIn"  tabindex="-1" role="dialog" aria-labelledby="costumModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -108,7 +138,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
 
 	<!-- End Modal -->
@@ -116,6 +146,10 @@
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-analytics.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-database.js"></script>
 		<script type="text/javascript" src="./scripts/modalInfo.js"></script>
+		<script type="text/javascript" src="./scripts/contact.js"></script>
 </body>
 </html>
