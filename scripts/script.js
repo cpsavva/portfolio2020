@@ -9,9 +9,6 @@ function firstFade() {
     event.preventDefault();
     $('.homePage').fadeOut('slow', function() {
         $('.about').fadeIn('slow');
-        setTimeout(function(){
-            $( ".projectText" ).removeClass( ".projectText" ).addClass( "neons" );
-        }, 3000);
     });
 }
 
@@ -47,16 +44,14 @@ function projectsPage() {
         $('.projects').fadeIn('slow');
     })
 }
-// SOMETHING IS UP WITH THIS FUNCTION!!!!!!!!
+
 function aboutPage() {
     $('#about').click(function() {
         $('.contact').css('display', 'none');
         $('.projects').css('display', 'none');
         $('.homePage').css('display', 'none');
         $('.about').fadeIn('slow');
-        setTimeout(function(){
-            $( ".projectText" ).removeClass( ".projectText" ).addClass( "neons" );
-        }, 3000);
+ 
     })
 }
 

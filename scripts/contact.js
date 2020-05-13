@@ -18,7 +18,6 @@ var firebaseConfig = {
 var messagesRef = firebase.database().ref("messages");
 
 
-
 function submitForm(){
 // Listener
  $("form").submit(function(e){
@@ -47,7 +46,6 @@ function submitForm(){
 
 };
 
-
 //Saving Messages
 function saveMessages(name, email, message){
 
@@ -62,18 +60,7 @@ function saveMessages(name, email, message){
 
 }
 
-
-
-
-
-
-
-
-
-
 // Executions
-
-
 $(document).ready(function(){
 	submitForm();
 
