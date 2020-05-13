@@ -140,6 +140,9 @@ body {
 }
 #pulse h2 {
   font-size: 30px;
+  color: #989E8C;
+  text-shadow: 0 0 2px #d5bea2;
+  padding-top: 30px;
 }
 .pulsing h2 {
   font-size: 30px;
@@ -158,6 +161,8 @@ body {
   }
 }
 /*End of Animations*/
-
+button.navbar-toggler{
+  border: none;
+}
 
 

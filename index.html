@@ -10,22 +10,22 @@
 	<body>
 		<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color:rgba(135, 129, 110, .7)">
 			<a class="navbar-brand homeSec" id="home">Home</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-			</button>
+		   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item">
-						<a class="nav-link" id="about" data-section=0>About</a>
+						<a class="nav-link" id="about">About</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" id="projects" data-section=1>Projects</a>
+						<a class="nav-link" id="projects">Projects</a>
 					</li>
 					<li>
-						<a class="nav-link" id="contact" data-section=2>Contact</a>
+						<a class="nav-link" id="contact">Contact</a>
 					</li>
-				</ul>
-				<ul class="navbar-nav ml-auto">
+					</ul>
+					<ul class="navbar-nav ml-auto">
 					<span>
 						<a href="https://github.com/cpsavva" id="github" target='_blank'><img class="icons" src="./assets/css/images/gitblack.png"></a>
 						<a href="https://linkedin.com/in/csoriasavva" id='linkedin' target='_blank'><img class="icons" src="./assets/css/images/linkedinblack.png"></a>
@@ -35,6 +35,7 @@
 				</ul>
 			</div>
 		</nav>
+
 		
 		<div class="container-fluid homePage">
 			<div class="empty"></div>
@@ -45,11 +46,11 @@
 			</div>
 			
 			<div class="row justify-content-md-center">
-				<div class="col-sm-auto"></div>
-				<div class="col-sm-auto">
+				<div class="col-sm"></div>
+				<div class="col-sm text-center">
 					<p class="aboutSec">enter</p>
 				</div>
-				<div class="col-sm-auto"></div>
+				<div class="col-sm"></div>
 			</div>
 		</div>
 		<!-- End of Home -->
@@ -57,11 +58,11 @@
 		<div class="container-fluid about" style="display: none;">
 			<div class="empty"></div>
 			<div class="row justify-content-md-center">
-				<div class="col text-center">
+				<div class="col-sm text-center">
 					<h2 class="animate__animated animate__lightSpeedInRight">Some clever catch phrase</h3>
 				</div>
 			</div>
-			<div class="row justify-content-md-center">
+			<div class="row justify-content-xs-center">
 				<div class="col-1"></div>
 				<div class="col-10">
 					<br>
@@ -86,10 +87,10 @@
 			<div class="row">
 				<div class="empty"></div>
 			</div>
-			<div class="row justify-content-md-center">
+			<div class="row justify-content-sm-center">
 				<div class="col-1"></div>
 				<div class="col-10">
-					<div class="row">
+					<div class="row justify-content-sm-center">
 						<div class="col-sm">
 							<div class="projStyle rounded">
 								<img class="projButton img-thumbnail" src="./assets/css/images/calogo.png" alt="Cancer Alliance" data-toggle="modal" data-target="#projectModal" data-section=0>
@@ -163,7 +164,10 @@
 		</div>
 		<!-- End Modal -->
 		<!-- Scripts -->
-		<script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+		<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
 		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
