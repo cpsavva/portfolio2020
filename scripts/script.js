@@ -9,6 +9,10 @@ function firstFade() {
     event.preventDefault();
     $('.homePage').fadeOut('slow', function() {
         $('.about').fadeIn('slow');
+        setTimeout(function(){
+            $("#pulse").addClass("pulsing");
+        }, 3000);
+ 
     });
 }
 
@@ -51,6 +55,9 @@ function aboutPage() {
         $('.projects').css('display', 'none');
         $('.homePage').css('display', 'none');
         $('.about').fadeIn('slow');
+        setTimeout(function(){
+            $("#pulse").addClass("pulsing");
+        }, 3000);
  
     })
 }
