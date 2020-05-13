@@ -11,7 +11,7 @@ font-family: 'Abel', sans-serif;
 font-family: 'Dosis', sans-serif;
 font-family: 'Montserrat', sans-serif;
 */
-
+/*overall style*/
 body {
   background-color: #3F322A;
   background-image: url('./images/low-contrast-linen.png');
@@ -36,7 +36,15 @@ body {
 	position: absolute;
 	bottom: 0;
 }
+.icons {
+  height: 35px;
+  width: 35px;
+}
+.empty{
+  height: 75px
+}
 
+/*project div*/
 .projStyle {
   height: 250px;
   width: 250px;
@@ -55,7 +63,6 @@ body {
   border: none;
 }
 
-
 .modal-content {
   background-color: #87816E ;
   background-image: url('./images/asfalt-light.png');
@@ -64,17 +71,22 @@ body {
 #siteLink {
   color:white ;
 }
+/*end of project div*/
 
-.icons {
-  height: 35px;
-  width: 35px;
-}
-.empty{
-  height: 75px
-}
+/*about div*/
 .lang {
   color: #87816E;
 }
+.projectText{
+    margin-top: 3rem;
+}
+.projectText h5 {
+  /*font-size: 5rem;*/
+  text-align: center;
+  color: #C2BB9D;
+}
+/*end of about div*/
+/*contact div*/
 .form-control {
   background-color: #C2BB9D;
 
@@ -87,17 +99,7 @@ body {
   visibility: hidden;
   color:#C2BB9D;
 }
-
-.projectText{
-    margin-top: 3rem;
-}
-.projectText h5 {
-  /*font-size: 5rem;*/
-  text-align: center;
-  color: #C2BB9D;
-
-
-}
+/*end contact div*/
 
 /*Animations*/
 .neons {
