@@ -108,6 +108,14 @@ body {
    text-align: center;
 }
 
+.neons h1 {
+  font-size: 8rem;
+  text-align: center;
+   font-weight: bold;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
 .neons h4 {
   font-size: 5rem;
   text-align: center;
@@ -130,21 +138,8 @@ body {
     text-shadow: 0 0 20px #d5bea2, 0 0 30px #d5bea2, 0 0 40px #d5bea2, 0 0 50px #d5bea2, 0 0 60px #d5bea2, 0 0 70px #d5bea2, 0 0 80px #d5bea2, 0 1 90px #d5bea2;
   }
 }
-
-.typewriter h1 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+.ani {
+  --animation-repeat: 20;
 }
 /*End of Animations*/
 
