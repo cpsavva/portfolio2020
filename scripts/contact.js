@@ -22,19 +22,17 @@ function submitForm(){
 // Listener
  $("form").submit(function(e){
   	e.preventDefault();
-    console.log('123')
+    // console.log('123')
   
   // Collect Values
     var name = $("#name").val();
     var email = $("#email").val();
     var message = $("#message").val();
 
-    // 
     saveMessages(name, email, message);
     $('.alert').css("visibility", "visible");
     
     setTimeout(function(){
-    // 	$(".alert:visible").hide("slow");
     $('.alert').css("visibility", "hidden");
     }, 3000);
 

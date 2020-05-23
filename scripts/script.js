@@ -24,36 +24,28 @@ function projectFade() {
 
 function resetHome() {
     $('#home').click(function() {
-        $('.projects').css('display', 'none');
-        $('.about').css('display', 'none');
-        $('.contact').css('display', 'none');
+        $('.projects, .about, .contact').css('display', 'none');
         $('.homePage').fadeIn('slow');
     })
 }
 
 function contactPage() {
     $('#contact').click(function() {
-        $('.projects').css('display', 'none');
-        $('.about').css('display', 'none');
-        $('.homePage').css('display', 'none');
+        $('.projects, .about, .homePage').css('display', 'none');
         $('.contact').fadeIn('slow');
     })
 }
 
 function projectsPage() {
     $('#projects').click(function() {
-        $('.contact').css('display', 'none');
-        $('.about').css('display', 'none');
-        $('.homePage').css('display', 'none');
+        $('.contact, .about, .homePage').css('display', 'none');
         $('.projects').fadeIn('slow');
     })
 }
 
 function aboutPage() {
     $('#about').click(function() {
-        $('.contact').css('display', 'none');
-        $('.projects').css('display', 'none');
-        $('.homePage').css('display', 'none');
+        $('.contact, .projects, .homePage').css('display', 'none');
         $('.about').fadeIn('slow');
         setTimeout(function(){
             $("#pulse").addClass("pulsing");
