@@ -16,83 +16,46 @@ body {
   background-color: #3F322A;
   background-image: url('./images/low-contrast-linen.png');
   background-repeat: repeat;
-  color: #A47C4A;
-/*  padding-top: 60px;*/
-  font-family: 'Dosis', sans-serif;
+
+	color: #A47C4A;
+	padding-top: 60px;
+	font-family: 'Dosis', sans-serif;
+	display: flex;
+  justify-content: center;
+  align-items: center;
 }
-nav {
-  background-color: rgba(135, 129, 110, .7);
+.ptags {
+	font-family: 'Montserrat', sans-serif;
+	color: #C2BB9D;
 }
-.about, .projects, .contact{
-  display: none;
+.about .projects .contact{
+	display: none;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
 }
 .icons {
   height: 35px;
   width: 35px;
 }
-.wrapper {
-  margin-top: 75px;
-}
-/*homePage*/
-.aboutSec:hover {
-  cursor: pointer;
+.empty{
+  height: 75px
 }
 
-/*About*/
-.about h5 {
-  font-family: 'Montserrat', sans-serif;
-}
-.about h2 {
-  color: #989E8C;
-  padding-bottom: 10px;
-}
-.para1 {
-  padding-top: 15px;
-}
+
+
+/*about div*/
 .lang {
   color: #87816E;
 }
-.projSec:hover {
-  cursor: pointer;
-}
 
-/*project*/
-.img-thumbnail:hover {
-	cursor: pointer;
-}
-.thumbs {
-  padding-bottom: 35px;
-}
-#left-thumb{
-  margin-right: 35px;
-}
-.projButton {
-  height: 200px;
-  width: 200px;
-  background-color: #989E8C;
-  border: none;
-}
-#trail {
-  margin-top: 60px;
-  margin-left: 10px;
-  max-width: 180px;
-  background-color: #989E8C; 
-  border: none;
-  align-content: center
-}
-.modal-content {
-  background-color: #87816E ;
-  background-image: url('./images/asfalt-light.png');
-  color: #3F322A ;
-}
-#siteLink {
-  color:white ;
-}
-
-
+/*end of about div*/
 /*contact div*/
 .form-control {
   background-color: #C2BB9D;
+
 }
 .form-control:focus {
   background-color: #C2BB9D;
@@ -102,7 +65,43 @@ nav {
   visibility: hidden;
   color:#C2BB9D;
 }
+/*end contact div*/
+/*project div*/
 
+
+#trailImg {
+  margin-top: 65px;
+  background-color: #87816E; 
+  border: none;
+}
+
+.modal-content {
+  background-color: #87816E ;
+  background-image: url('./images/asfalt-light.png');
+  color: #3F322A ;
+}
+#siteLink {
+  color:white ;
+}
+.projStyle {
+  height: 250px;
+  width: 250px;
+  margin: 3px;
+  background-color: #87816E;
+}
+.projButton {
+  background-color: #87816E; 
+  border: none;
+}
+.projectText{
+    margin-top: 3rem;
+}
+.projectText h4 {
+  /*font-size: 5rem;*/
+  text-align: center;
+  color: #C2BB9D;
+}
+/*end of project div*/
 /*Animations*/
 .neons {
    margin-top: 3rem;
@@ -117,6 +116,15 @@ nav {
   -moz-animation: glow 2s ease-in-out infinite alternate;
   animation: glow 2s ease-in-out infinite alternate;
 }
+.neons h4 {
+  font-size: 5rem;
+  text-align: center;
+   font-weight: bold;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
 @-webkit-keyframes glow {
      from {
       color: #A47C4A;
@@ -152,3 +160,9 @@ nav {
     font-size: 35px;
   }
 }
+/*End of Animations*/
+button.navbar-toggler{
+  border: none;
+}
+
+
