@@ -53,11 +53,11 @@
 
 function loadModalInfo(){
 		$('.projButton').click(function(){
-			console.log('.projButton has been clicked')
+			// console.log('.projButton has been clicked')
 			var projName = $(this).data('section');
 			var info = modalInfo[projName]
-			console.log("projName is: " + projName)
-			console.log(modalInfo[projName].projectName)
+			// console.log("projName is: " + projName)
+			// console.log(modalInfo[projName].projectName)
 				$('.modalInfo').html(		        
 					'<h2 class="modal-title modalHeading">' + info.projectName + 
 					'</h2><div class="row"><div class="col-sm-4 text-center"><img class="img-rounded" src="./assets/css/images/' 
