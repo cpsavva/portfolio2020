@@ -23,7 +23,7 @@ body {
 nav {
   background-color: rgba(135, 129, 110, .7);
 }
-.homePage, .projects, .contact{
+.about, .projects, .contact{
   display: none;
 }
 .icons {
@@ -44,6 +44,10 @@ nav {
 }
 .about h2 {
   color: #989E8C;
+  padding-bottom: 10px;
+}
+.para1 {
+  padding-top: 15px;
 }
 .lang {
   color: #87816E;
@@ -67,6 +71,14 @@ nav {
   width: 200px;
   background-color: #989E8C;
   border: none;
+}
+#trail {
+  margin-top: 60px;
+  margin-left: 10px;
+  max-width: 180px;
+  background-color: #989E8C; 
+  border: none;
+  align-content: center
 }
 .modal-content {
   background-color: #87816E ;
