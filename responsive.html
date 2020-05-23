@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Abel&family=Dosis:wght@500&family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+<body>
+
+	<nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+	  <a class="navbar-brand" id="home" href="#">Home</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item">
+	        <a class="nav-link" id="about" href="#">About</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" id="projects" href="#">Project</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" id="contact" href="#">Contact</a>
+	      </li>
+	    </ul>
+	    <ul class="navbar-nav ml-auto">
+			<span>
+				<a href="https://github.com/cpsavva" id="github" target='_blank'><img class="icons" src="./assets/css/images/gitblack.png"></a>
+				<a href="https://linkedin.com/in/csoriasavva" id='linkedin' target='_blank'><img class="icons" src="./assets/css/images/linkedinblack.png"></a>
+				<a href="mailto:csoriasavva@gmail.com"><img class='icons' src="./assets/css/images/emailblack.png"></a>
+			</span>	
+		</ul>
+	  </div>
+	</nav>
+	<div class="container-fluid">
+		<div class="homePage wrapper">
+			<div class="neons col-12 aboutSec">
+				<h1 class="aboutSec"><em>HIRE ME</em></h1>
+			</div>
+			<div class="d-flex justify-content-center">
+				<p class="aboutSec">enter</p>
+			</div>
+		</div>
+		<div class="about wrapper" >
+			<div class="row d-flex justify-content-center">
+				<h2 class="animate__animated animate__lightSpeedInRight">Some clever catch phrase</h2>
+			</div>
+			<div class="row d-flex justify-content-center">
+				<div class="col-8">
+					<h5>
+						I am full stack web developer currently based in the New York area. My life has taken me across the Pond, to the Aegean and back and with it came the ability to understand other perspectives. I take great joy in supporting others and seeing their work come to fruition.
+					</h5>
+				</div>
+			</div>
+				<br>
+				<br>
+			<div class="row d-flex justify-content-center">
+				<div class="col-8">
+					<h5>
+						My specialities include <em class="lang">Javascript</em> and the corresponding libraries <em class="lang">(React.js, Node.js, Express.js, Handlebars.js)</em> along with databases <em class="lang">MySQL</em> and <em class="lang">MongoDB.</em> Though my interest focuses on backend Javascript, I strive to continue learning in all avenues of web-development.
+					</h5>
+				</div>
+			</div>
+			<div id="pulse" class="row d-flex justify-content-center projSec">
+				<h2 class="animate__animated animate__backInDown animate__delay-2s">Projects</h2>
+				<!-- <h2>Projects</h2> -->
+			</div>
+		</div>
+		<div class="projects wrapper" >
+				<div class="row d-flex justify-content-around thumbs">
+					<img class="img-thumbnail projButton" data-toggle="modal" data-target="#projectModal" data-section=0 src="./assets/css/images/calogo.png" alt="">
+					<img class="img-thumbnail projButton" data-toggle="modal" data-target="#projectModal" data-section=1 src="./assets/css/images/gotboredWhite.png" alt="">
+				</div>
+				<div class="row d-flex justify-content-center thumbs">
+					<img id="left-thumb" class="img-thumbnail projButton" data-toggle="modal" data-target="#projectModal" data-section=2 src="./assets/css/images/trailblazer.png" alt="trailblazer">
+					<img class="img-thumbnail projButton" data-toggle="modal" data-target="#projectModal" data-section=3 src="./assets/css/images/radio2.jpg" alt="NPR Scrapping">	
+				</div>
+		</div>
+		<div class="contact wrapper">
+			<div class="row d-flex justify-content-center">
+				<h6 class="alert">Thank you! Your message has been submitted.</h6>
+			</div>
+			<div class="row d-flex justify-content-center">
+				<div class="col-6">
+					<form>
+						<div class="form-group">
+					    	<label  for="name">Name</label>
+				    		<input id="name" type="text" class="form-control" required>
+				 		</div>
+						<div class="form-group">
+							<label for="email">Email address</label>
+							<input id="email" type="text" class="form-control" required>
+						</div>
+						<div class="form-group">
+							<label for="message">Message</label>
+							<textarea id="message" class="form-control" rows="3"></textarea>
+						</div>
+						<button type="submit" class="btn btn-secondary">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal -->
+	<div class="modal fade animate__animated animate__flipInX" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body projectCaption">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<div class="modalInfo"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Modal -->
+
+
+<!-- Scripts -->
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!-- 	<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-analytics.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-database.js"></script> -->
+	<script type="text/javascript" src="./scripts/script.js"></script>
+	<script type="text/javascript" src="./scripts/modalInfo.js"></script>
+	<!-- <script type="text/javascript" src="./scripts/contact.js"></script> -->
+</body>
+</html>
