@@ -152,3 +152,17 @@ nav {
     font-size: 35px;
   }
 }
+
+@media (max-width: 425px) {
+  #left-thumb{
+  margin-right: 0px;
+  }
+  .thumbs {
+    padding-bottom: 0px;
+  }
+
+  .projButton {
+    align-content: center;
+    margin-bottom: 35px;
+  }
+}
