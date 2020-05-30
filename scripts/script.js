@@ -53,6 +53,16 @@ function aboutPage() {
  
     })
 }
+function width(){
+    $(window).on('resize', function() {
+  var win = $(this);
+  if (win.width() > 425) {
+    console.log('i am less than 425px')
+   $('.thumbs').removeClass('justify-content-around');
+
+  }
+  });
+}
 
 
 // Executions
@@ -67,5 +77,6 @@ $(document).ready(function(event) {
     contactPage();
     aboutPage();
     projectsPage();
+    width();
 
 })
