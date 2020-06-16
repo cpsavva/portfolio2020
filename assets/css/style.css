@@ -23,6 +23,9 @@ body {
 nav {
   background-color: rgba(135, 129, 110, .7);
 }
+.navbar-dark .navbar-brand{
+  color:#989E8C;
+}
 .about, .projects, .contact{
   display: none;
 }
@@ -46,40 +49,45 @@ nav {
   color: #989E8C;
   padding-bottom: 10px;
 }
-.para1 {
-  padding-top: 15px;
-}
+
 .lang {
   color: #87816E;
 }
 .projSec:hover {
   cursor: pointer;
 }
+#self{
+  border: 0.5rem outset #A47C4A;
+}
 
 /*project*/
-.img-thumbnail:hover {
+
+.projButton:hover {
 	cursor: pointer;
 }
 .thumbs {
   padding-bottom: 35px;
 }
-#left-thumb{
+.leftThumb{
   margin-right: 35px;
 }
 .projButton {
   height: 200px;
   width: 200px;
   background-color: #989E8C;
-  border: none;
+  border: .5rem outset #A47C4A;
 }
 #trail {
-  margin-top: 60px;
+  margin-top: 55px;
   margin-left: 10px;
-  max-width: 180px;
+  max-width: 170px;
   background-color: #989E8C; 
   border: none;
   align-content: center
 }
+/*#trail:hover {
+  cursor: pointer;
+}*/
 .modal-content {
   background-color: #87816E ;
   background-image: url('./images/asfalt-light.png');
@@ -154,13 +162,18 @@ nav {
 }
 
 @media (max-width: 425px) {
-  #left-thumb{
-  margin-right: 0px;
+  .headline{
+    padding-bottom: 55px;
   }
+  .para1 {
+    padding-top: 55px;
+  }
+.leftThumb{
+  margin-right: 0px;
+}
   .thumbs {
     padding-bottom: 0px;
   }
-
   .projButton {
     align-content: center;
     margin-bottom: 35px;
