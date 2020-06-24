@@ -69,7 +69,7 @@ nav {
   padding-bottom: 35px;
 }
 .leftThumb{
-  margin-right: 35px;
+  margin-right: 135px;
 }
 .projButton {
   height: 200px;
@@ -165,16 +165,16 @@ nav {
   .headline{
     padding-bottom: 55px;
   }
-  .para1 {
+.para1 {
     padding-top: 55px;
   }
 .leftThumb{
   margin-right: 0px;
 }
-  .thumbs {
+.thumbs {
     padding-bottom: 0px;
   }
-  .projButton {
+.projButton {
     align-content: center;
     margin-bottom: 35px;
   }
