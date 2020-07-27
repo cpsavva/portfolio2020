@@ -51,8 +51,8 @@
 ]
 
 
-function loadModalInfo(){
-		$('.projButton').click(function(){
+function loadModalInfo() {
+		$('.projButton').click(function() {
 			// console.log('.projButton has been clicked')
 			var projName = $(this).data('section');
 			var info = modalInfo[projName]
@@ -71,6 +71,5 @@ function loadModalInfo(){
 				    )
 		})
 }
-$(document).ready(function(){
-	loadModalInfo();
-})
+
+$(document).ready(() => loadModalInfo());
