@@ -43,7 +43,7 @@ function aboutPage() {
 }
 
 function width(){
-    $(window).on('resize', () => {
+    $(window).on('resize', function() {
         var win = $(this);
         if (win.width() > 425) {
         console.log('i am less than 425px')
